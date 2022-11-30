@@ -71,6 +71,7 @@ void openCallback(const char *payload, size_t length)
     {
         openSecond();
     }
+    webSocket.emit("openResponse", "Celda abierta");
 }
 
 void openFirst()
